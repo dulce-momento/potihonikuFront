@@ -1,0 +1,368 @@
+@font-face {
+  font-family: "Polka";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Polka"),
+    /* Если не получилось, загрузит woff2 */
+    url("./fonts/Polka/Web-TT/Polka.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("./fonts/Polka/Web-TT/Polka.woff") format("woff"),
+    url("./fonts/Polka/Web-TT/Polka.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Craftwork Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Craftwork Grotesk"),
+    /* Если не получилось, загрузит woff2 */
+    url("./fonts/Craftwork_Grotesk_Trial/TTF/CraftworkGrotesk-Regular.ttf") format("ttf");
+}
+body{
+    line-height: 1.5;
+    background: url("./images/Gradbackground.png") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bodyContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+header{
+  width: 90%;
+}
+.navbar-navbar{
+	width: 100%;
+	height: 74px;
+	display: flex;
+	align-items:center;
+}
+.horBorder{
+  width:100%;
+  border: 0.81px solid #355070;
+}
+.div-navbar{
+  width: 25%;
+  display: flex;
+	align-items:center;
+  justify-content: center;
+}
+.marginFive{
+    margin-left: 5%;
+}
+.verBorderleft{
+    height: 100%;
+    border: 0.81px solid #355070;
+}
+.PolkaHigh{
+  color: #6D597A;
+  font-family: "Polka" ;
+  font-size: 29.16px;
+  font-weight: 400;
+  line-height: 27.73px;
+}
+.TD_none{
+  text-decoration: none;
+}
+.navbar-brand{
+  text-decoration: none;
+    text-align: left;
+    margin-left: 2.2%;
+    margin-right: 2.2%;
+}
+.navbar-menu{
+  width: 75%;
+	display: flex;
+	align-items:center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+.navbar-menu li{
+	display: inline-block;
+  margin-right: 8%;
+}
+.navbar-menu li a{
+	display: inline-block;
+	color: #355070;
+	text-decoration: none;
+	margin-top: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16.2px;
+  font-weight: 600;
+  line-height: 19.44px;
+  text-align: left;
+}
+
+ul{
+  list-style: none;
+}
+
+footer{
+  background: #FFFFFF;
+  height: 200px;
+  border-top: 1px solid #355070;
+  width: 100%;
+  border-radius: 42px 42px 0 0;
+  display: flex;
+	align-items:start;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer_menu{
+  width: 45%;
+	display: flex;
+	align-items:start;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+.footer_text{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16.2px;
+  font-weight: 600;
+  line-height: 19.44px;
+  color: #6D597A;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+
+.box-input .input {
+  width: 300px;
+  height: 40px;
+  background: none;
+  border: 2px solid #355070;
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: #355070;
+  outline: none;
+  transition: 0.7s;
+}
+
+.box-input:hover input{
+  border-radius: 10px;
+}
+.box div{
+  margin-right:8%;
+}
+.box i{
+  margin-left: -35px;
+  margin-top: 20px;
+  transform: translate(-50%,-50%);
+  font-size: 23px;
+  color: #355070;
+  transition: .4s;
+}
+.box-input:hover i{
+  opacity: 0;
+  z-index: -1;
+}
+.box-input{
+  display: flex;
+}
+.content-hidden{
+	display: none;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+.flex_block{
+  display: flex;
+}
+.b90{
+  width: 90%;
+}
+.first-left{
+  position: relative;
+  height:inherit;
+  background: url("./images/dulce_momentoRed.png") no-repeat;
+  background-position:top left;
+  background-size:contain;
+}
+.first-right{
+  height:inherit;
+  object-fit: cover;
+}
+.first-right img{
+  height:inherit;
+}
+.dulcheHigh{
+  color: #6D597A;
+  font-family: "Polka";
+  font-size: 147.42px;
+  font-weight: 400;
+  line-height: 140.2px;
+  text-align: left;
+}
+.title-top{
+  position: relative;
+  top: 20%;
+  left: 18%;
+}
+.title-center{
+  position: relative;
+  top: 14%;
+  margin-top: 40px;
+  left: 18%;
+}
+.title-bottom{
+  position: relative;
+  top: 10%;
+  margin-top: 20px;
+  left: 18%;
+}
+.title-bottom button{
+  width: 299.47px;
+  height: 61.92px;
+  border: 2.53px solid #355070;
+  border-radius: 83.4px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+.title-bottom button:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dulcheLow{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #355070;
+  font-size: 24.3px;
+  font-weight: 400;
+  line-height: 29.16px;
+  text-align: left;
+}
+
+.relative_block{
+  position: relative;
+  display: inline-block;
+}
+.b100{
+  width: 100%;
+}
+.fact{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16.2px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 19.44px;
+  position: relative;
+  text-align: left;
+  color: #355070;
+  display: inline-block;
+}
+
+
+.imgfact2{
+  background: url("./images/10 1.png") no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size:contain;
+}
+.imgfact1{
+  background: url("./images/fact1.png") no-repeat;
+  background-size:contain;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+.ct{
+  display: flex;
+  align-items: center;
+}
+.cts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spA{
+  display: flex;
+  justify-content: space-around;
+}
+.spB{
+  display: flex;
+  justify-content: space-between;
+}
+.offerLabel{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: left;
+  color: #6D597A;
+  margin-top: 45px;
+}
+.offer_block{
+  width: 362px;
+  height: 421px;
+}
+.offer_img{
+  width: 362px;
+  height: 362px;
+  display: block;
+}
+.offer_rectangle{
+  width: 362px;
+  height: 60px;
+  border-radius: 0 0 42px 42px;
+  background: #FFFFFF;
+}
+.offer_text{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16.2px;
+  font-weight: 400;
+  line-height: 19.44px;
+  color: #355070;
+}
+.txtC{
+  text-align: center;
+}
+.txtL{
+  text-align: left;
+}
+.txtR{
+  text-align: right;
+}
+.mySlider{
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+.slick-list {
+  overflow: hidden;
+} 
+.slider {
+  position: relative;
+  padding: 0px;
+}
+.slider .slick-arrow.slick-next{
+  right: -40px;
+  height: 46px;
+  width: 46px;
+}
+.slider .slick-arrow.slick-prev{
+  left: -60px;
+  height: 46px;
+  width: 46px;
+}
