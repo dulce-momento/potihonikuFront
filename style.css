@@ -63,8 +63,8 @@ header{
     margin-left: 5%;
 }
 .verBorderleft{
-    height: 100%;
-    border: 0.81px solid #355070;
+  min-height: 74px;
+  border: 0.81px solid #355070;
 }
 .PolkaHigh{
   color: #6D597A;
@@ -304,7 +304,7 @@ nav li:last-child {
 }
 .offerLabel{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 600;
   line-height: 60px;
   text-align: left;
@@ -319,6 +319,7 @@ nav li:last-child {
   width: 362px;
   height: 362px;
   display: block;
+  object-fit: fill;
 }
 .offer_rectangle{
   width: 362px;
@@ -365,4 +366,59 @@ nav li:last-child {
   left: -60px;
   height: 46px;
   width: 46px;
+}
+
+.tagsContainer{
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.tags{
+  margin-left: 60px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.tagOne{
+  display: inline;
+  padding: 3px 13px 3px 13px;
+  border: 2px solid #355070;
+  border-radius: 20px;
+  margin-left: 14px;
+}
+.tagOne:first-of-type{
+  margin-left: 0px;
+}
+.tags .active{
+  color: white;
+  background-color: rgba(53, 80, 112, 1);
+}
+.catalog_rectangle{
+  width: 362px;
+  height: 130px;
+  border-radius: 0 0 42px 42px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 25px;
+
+}
+.catalog_block{
+  width: 362px;
+  height: 501px;
+}
+.button_catalog{
+  width: 126px;
+  height: 29px;
+  border-radius: 88px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.button_catalog:hover{
+  color: white;
+  background-color: rgba(53, 80, 112, 1);
 }
